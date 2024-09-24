@@ -1,14 +1,19 @@
+
+import java.util.Scanner;
+
 public class StringExample {
     public static void main(String[] args) {
         // String result = greeting();
         // System.out.println(result);
-
-        String message = myGreet("Shubham");
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your name: ");
+        String name = in.next();
+        String message = myGreet(name);
         System.out.println(message);
     }
 
     static String myGreet(String name) {
-        String greet = "hello" + name;
+        String greet = "hello " + name;
         return greet;
     }
 
