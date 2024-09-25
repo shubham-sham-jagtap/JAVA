@@ -7,8 +7,8 @@ public class StringExample {
         // System.out.println(result);
         Scanner in = new Scanner(System.in);
         System.out.println("Enter your name: ");
-        String name = in.next();
-        String message = myGreet(name);
+        String naam = in.next();
+        String message = myGreet(naam);
         System.out.println(message);
     }
 
