@@ -3,7 +3,7 @@ public class Shadowing {
     public static void main(String[] args) {
         System.out.println(x); // 20
         int x;
-        // Ayatem.out.println(x);  -  scope will begin when vale is initialised
+        // System.out.println(x);  -  scope will begin when vale is initialised
         x = 80;
         System.out.println(x); // 80
         fun();
