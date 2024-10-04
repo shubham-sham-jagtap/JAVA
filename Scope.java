@@ -7,7 +7,7 @@
 public class Scope {
     public static void main(String[] args) {
         int a = 20; //initialised outside the block
-        int b = 30;
+        int b = 40;
 
         {
             // int a = 70;  -  already initialised outside the block in the same method, hence you cannot initialise again
