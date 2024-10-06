@@ -26,11 +26,15 @@ public class Main {
 
         // System.out.println(arr[5]); // insex out of bound error
 
-        // String of objects
+        // String of objects 
         String[] str = new String[4];
         for (int i = 0; i < str.length; i++) {
             str[i] = in.next();
         }
+        System.out.println(Arrays.toString(str));
+
+        //modify
+        str[1] = "zende";
         System.out.println(Arrays.toString(str));
            
      }
