@@ -1,5 +1,5 @@
 package Linear_Search.Code;
-
+// its a leet code question 
 public class MaxWealth {
     public static void main(String[] args) {
         int[][] accounts = {

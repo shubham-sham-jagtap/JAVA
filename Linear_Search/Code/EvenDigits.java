@@ -1,5 +1,5 @@
 package Linear_Search.Code;
-
+// its a leet code queston
 public class EvenDigits {
     public static void main(String[] args) {
         //Find even number of digits in an array
