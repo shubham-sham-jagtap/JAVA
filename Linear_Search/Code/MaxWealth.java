@@ -13,7 +13,7 @@ public class MaxWealth {
     }
 
     static int MaximumWealth(int[][] arr) {
-        int maxwealth = Integer.MIN_VALUE;
+        int maxwealth = Integer.MIN_VALUE; //8
         for(int person = 0; person < arr.length; person++) {
             int sum = 0;
             for(int account = 0; account < arr[person].length; account++) {
@@ -25,5 +25,6 @@ public class MaxWealth {
             }
         }
         return maxwealth;
+
     }
 }
