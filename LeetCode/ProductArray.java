@@ -42,4 +42,6 @@ public class ProductArray {
     
 }
 
+//code done - need to understand the logic
+
 
