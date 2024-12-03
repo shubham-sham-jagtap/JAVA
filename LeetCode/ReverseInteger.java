@@ -9,22 +9,26 @@ public class ReverseInteger {
         System.out.println(ans);
     }
 
-    static int reverse(int x) {
-        int revNum = 0;
-        while(x > 0) {
-            int rem = x % 10;
-            revNum = (revNum * 10) + rem;
+    
+    
+    public static int reverse(int x) {
+        int max = Integer.MAX_VALUE;
+        int min = Integer.MIN_VALUE;
+        
+        int rev = 0;
+
+        while (x != 0) {
+            int digit = x % 10;
             x = x/10;
-        }
-        if(x < 0) {
-            x = x * (-1);
-            while (x > 0) {
-                int rem = x % 10;
-                revNum = (revNum * 10) + rem;
-                x = x/10;
+
+            if(rev > max/10 || rev == max/10 && digit >= max%10 ) {
+                return 0;
             }
-            return (-1)*revNum;
+            if(rev < min/10 || rev == min/10 && digit <= min%10 ) {
+                return 0;
+            }
+            rev = (rev * 10) + digit;
         }
-        return revNum;
-    }
+        return rev;
+}
 }
