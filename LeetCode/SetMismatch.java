@@ -19,13 +19,13 @@ public class SetMismatch {
      }
     } 
 
-    int[] arr = new int[2];
+    // int[] arr = new int[2];
     for (int index = 0; index < nums.length; index++) {
      if(nums[index] != index + 1) {
-         arr[0] = nums[index];
-         arr[1] = index + 1;
+         return new int[] {nums[index], index + 1};
      }
     }
-    return arr;
+    return new int[] {-1, -1};
+    // return arr;
  }
 }
