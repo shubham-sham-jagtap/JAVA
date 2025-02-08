@@ -2,7 +2,7 @@ public class Patterns {
   public static void main(String[] args) {
     // pattern1(4);
     // pattern2(4);
-    pattern17(5);
+    pattern31(4);
   }
    
   static void pattern30(int n) {
@@ -19,6 +19,17 @@ public class Patterns {
       }
       System.out.println();
     }
+  }
+  static void pattern31 (int n) {
+    int N = 2 * n - 1;
+    for(int row = 0; row < 2*n; row++) {
+      for(int col = 0; col < 2*n; col++ ) {
+        int valueAtEveryIndex = n - Math.min(Math.min(row, col), Math.min(N - row, N - col));
+        System.out.print(" "+ valueAtEveryIndex);
+      }
+      System.out.println();
+    }
+    
   }
   static void pattern17(int n) {
     for(int row = 1; row < 2*n; row++) {
